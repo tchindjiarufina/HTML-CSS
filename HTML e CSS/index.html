@@ -9,12 +9,11 @@
 </head>
 
 <body>
-    <header class="topo" <img
-        src="https://br.freepik.com/fotos-gratis/fotografia-em-close-up-de-um-gato-roxo-abracando-e-lambendo-o-outro-isolado-em-uma-parede-branca_13535714.htm#fromView=search&page=1&position=8&uuid=f9200efa-4dbc-47ef-aff7-48b6df0fc0e3&query=gatos"
+    <header class="topo" <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fjovempan.com.br%2Fedicase%2F7-racas-de-gato-com-filhotes-muito-fofos.html&psig=AOvVaw0ZyTVUdD9BPhqXnkKC6YVU&ust=1756316495984000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOCjpJiDqY8DFQAAAAAdAAAAABAE
         alt="">
 
         <h1>HTML + CSS: FUNDAMENTOS</h1>
-        <P class="subtitle">Eu amo gatos, chocolate e musica</P>
+        <P class=" subtitle">Eu amo gatos, chocolate e musica</P>
         <nav aria-label="Pesquise aqui">
             <ul class="menu">
                 <li><a href="#sobre">sobre</a></li>
@@ -31,11 +30,93 @@
     </header>
     <main class="gatos">
         <section id="sobre" class="card" <h2>Sobre esta pagina</h2>
-            <p>Esta é uma pagina estranha para treinar <strong>HTML</strong> e <em> CSS </em> do zero. Observe a
-                estrutura do código, os comentarios e o estilo aplicado. </p>
+            <p>Esta e uma pagina estranha para treinar <strong>HTML</strong> e <em> CSS </em> do zero. Observe a
+                estrutura do codigo, os comentarios e o estilo aplicado. </p>
+            <h3> O que vamos ver:</h3>
+            <ul>
+                <li>Estrutura basica do HTML</li>
+                <li>Seletores CSS: elementos, classe e id</li>
+                <li>Box model: margin, padding, listas e tabelas</li>
+                <li>Formularios simples e responsividade</li>
+                <li>Gatos e chocolate</li>
+            </ul>
+            <p>Dica: consulte a do documentacao do MDN
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">aqui</a>
+            </p>
+
 
         </section>
-
+        <section id="destaque" classe="card">
+            <h2>conceitos de CSS essenciais</h2>
+            <article class="caixa">
+                <h3>Seletores &amp;</h3>
+                <p>Regras do CSS podem mirar em elementos, classes ou ids.
+                    Quando há conflitos, no navegador escolhe pela prioridade:
+                    id > class > elementos
+                </p>
+                <p id="conteudo">Este paragrafo tem um ID para destaque</p>
+            </article>
+            <article class="caixa">
+                <h3>Box Model</h3>
+                <p>Todo elementos em bloco possui content, padding, border e margin.</p>
+                <div class="Box Model-demo">Sou uma Caixa</div>
+            </article>
+            <article class="caixa">
+                <h3>Display: inline vs block</h3>
+                <p><span class="tag-inline">span inline</span>fica na linha, enquanto elementos quebram linha
+                </p>
+            </article>
+        </section>
+        <!--Secao Tabela-->
+        <section id="tabela" class="card">
+            <h2>tabela de horários (exempplo)</h2>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>conteudo</th>
+                    <th>Duração</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr|>
+                    <td>Segunda</td>
+                    <td>Estrutura HTML</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Seletores e Box Model</td>
+                </tr>
+                <td>Sexta</td>
+                <td>Formulario e responsividade</td>
+            </tr>
+            </tbody>
+        </table>
+            
+        </section>
+        <!--Secao Formulario-->
+        <section id="contato" calss="card">
+            <h2>Fale conosco</h2>
+            <form action="#" class="Formulario" method="post">
+                <div class="grupo">
+                <label for="nome">Nome</label>
+                <input type="text" id="Nome" name="nome" placeholder="Seu nome"
+                required>
+                </div>
+                <div class="grupo"
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+            </div>
+            <div class="grupo">
+                <label for="mensagem">mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!--Rodapé-->
+    <footer class="Rodapé">
+        <small>&copy;2025 . Pagina didatica para aula de HTML + css</small>
+    </footer>
 </body>
-
 </html>
